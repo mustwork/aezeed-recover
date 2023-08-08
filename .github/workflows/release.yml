@@ -1,0 +1,57 @@
+name: Create Release with Artifacts
+
+on:
+  push:
+    tags:
+      - '[0-9]+\.[0-9]+\.[0-9]+'
+
+jobs:
+  release:
+    name: Create Release with Artifacts
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - run: |
+          VERSION=$(echo "${{ github.ref_name }}" | sed "s/\./_/g")
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV          
+      - run: |
+          echo "releasing version \"${{ env.VERSION }}\""
+
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.20.x
+
+      - name: Build Executables
+        run: |
+          make build-all
+          make checksum-all
+          ls -l ./bin
+
+      - name: Create Release Body
+        id: release_body
+        run: |
+          GIT_LOG_OUTPUT=$(git log -1 --pretty=%B)
+          echo "::set-output name=log_output::$GIT_LOG_OUTPUT"
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          body: ${{ steps.release_body.outputs.log_output }}
+          files: |
+            ./bin/aezeed-recover_${{ env.VERSION  }}_darwin_amd64
+            ./bin/aezeed-recover_${{ env.VERSION  }}_darwin_amd64.sha256
+            ./bin/aezeed-recover_${{ env.VERSION  }}_darwin_arm64
+            ./bin/aezeed-recover_${{ env.VERSION  }}_darwin_arm64.sha256
+            ./bin/aezeed-recover_${{ env.VERSION  }}_linux_386
+            ./bin/aezeed-recover_${{ env.VERSION  }}_linux_386.sha256
+            ./bin/aezeed-recover_${{ env.VERSION  }}_linux_amd
+            ./bin/aezeed-recover_${{ env.VERSION  }}_linux_amd.sha256
+            ./bin/aezeed-recover_${{ env.VERSION  }}_linux_arm
+            ./bin/aezeed-recover_${{ env.VERSION  }}_linux_arm.sha256
+            ./bin/aezeed-recover_${{ env.VERSION  }}_windows_64.exe
+            ./bin/aezeed-recover_${{ env.VERSION  }}_windows_64.exe.sha256

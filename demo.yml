@@ -1,0 +1,196 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  command: go run main.go --consent --dev
+  cwd: .
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  cols: 80
+  rows: 24
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: -1
+  
+  # Quality
+  # 1 - 100
+  quality: 25
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: 100
+
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: null
+    title: null
+    style:
+      border: 0px black solid
+      backgroundColor: white
+      # boxShadow: none
+      # margin: 0px
+
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+
+  # The size of the font
+  fontSize: 11
+
+  # The height of lines
+  lineHeight: 1
+
+  # The spacing between letters
+  letterSpacing: 0
+
+  # Theme
+  theme:
+    background: "#fff"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#63a33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#63a371"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+
+# Records, feel free to edit them
+records:
+  - delay: 647
+    content: "\e[?1000l\e[?1002l\e[?1003l\e[?1006l\e[?2004l\e[?1049h\e[22;0;0t\e[?1h\e=\e[?25l\e[H\e[2J\e[?25l\e[1;1H\e(B\e[m\e]8;;\e\\                                 \e(B\e[m\e[38;5;18m\e]8;;\e\\aezeed-recover\e(B\e[m\e]8;;\e\\                                 \e[2;1H\e(B\e[m\e[90m\e]8;;\e\\┌────────────────────────────────────────────────┐┌────────────────────────────┐\e[3;1H│\e(B\e[m\e[38;5;22m\e]8;;\e\\(r)\e(B\e[m\e]8;;\e\\                                             \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\ password: \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\                \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[4;1H│\e(B\e[m\e[38;5;22m\e]8;;\e\\(e)\e(B\e[m\e]8;;\e\\                                             \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e]8;;\e\\                            \e(B\e[m\e[90m\e]8;;\e\\│\e[5;1H│\e(B\e[m\e[38;5;22m\e]8;;\e\\(c)\e(B\e[m\e]8;;\e\\                                             \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\  1 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 13 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[6;1H│\e(B\e[m\e[38;5;22m\e]8;;\e\\(m)\e(B\e[m\e]8;;\e\\                                             \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\  2 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 14 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[7;1H│\e(B\e[m\e[38;5;22m\e]8;;\e\\(s)\e(B\e[m\e]8;;\e\\                                             \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\  3 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 15 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[8;1H│\e(B\e[m\e[38;5;22m\e]8;;\e\\(w)\e(B\e[m\e]8;;\e\\                                             \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\  4 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 16 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[9;1H│\e(B\e[m\e[38;5;22m\e]8;;\e\\(d)\e(B\e[m\e]8;;\e\\                                             \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\  5 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 17 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[10;1H│\e(B\e[m\e[38;5;22m\e]8;;\e\\(q)\e(B\e[m\e]8;;\e\\                                             \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\  6 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 18 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[11;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\  7 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 19 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[12;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\  8 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 20 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[13;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\  9 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 21 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[14;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\ 10 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 22 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[15;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\ 11 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 23 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[16;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[38;5;22m\e]8;;\e\\ 12 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[38;5;22m\e]8;;\e\\ 24 \e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\         \e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\│\e[17;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e]8;;\e\\                            \e(B\e[m\e[90m\e]8;;\e\\│\e[18;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e[91m\e[1m\e]8;;\e\\ ✗ incomplete mnemonic\e(B\e[m\e]8;;\e\\      \e(B\e[m\e[90m\e]8;;\e\\│\e[19;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e]8;;\e\\                            \e(B\e[m\e[90m\e]8;;\e\\│\e[20;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e]8;;\e\\                            \e(B\e[m\e[90m\e]8;;\e\\│\e[21;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e]8;;\e\\                            \e(B\e[m\e[90m\e]8;;\e\\│\e[22;1H│\e(B\e[m\e]8;;\e\\                                                \e(B\e[m\e[90m\e]8;;\e\\││\e(B\e[m\e]8;;\e\\                            \e(B\e[m\e[90m\e]8;;\e\\│\e[23;1H└────────────────────────────────────────────────┘└────────────────────────────┘\e[24;1H\e(B\e[m\e]8;;\e\\                                                                                \e[?25l\e[?25l\e[2;1H\e(B\e[m\e[90m\e]8;;\e\\╔════════════════════════════════════════════════╗\e[3;1H║\e[3;6H\e(B\e[m\e[38;5;18;48;5;114m\e[1m\e]8;;\e\\random mnemonic\e[3;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[4;1H║\e(B\e[m\e]8;;\e\\   \e[4;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[5;1H║\e[5;3H\e(B\e[m\e[38;5;22m\e]8;;\e\\e\e[5;6H\e(B\e[m\e[38;5;18m\e[1m\e]8;;\e\\edit mnemonic\e[5;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[6;1H║\e(B\e[m\e]8;;\e\\   \e[6;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[7;1H║\e[7;3H\e(B\e[m\e[38;5;22m\e]8;;\e\\c\e[7;6H\e(B\e[m\e[38;5;18m\e[1m\e]8;;\e\\clear mnemonic\e[7;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[8;1H║\e(B\e[m\e]8;;\e\\   \e[8;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[9;1H║\e[9;3H\e(B\e[m\e[38;5;22m\e]8;;\e\\m\e[9;6H\e(B\e[m\e[90m\e]8;;\e\\find missing words\e[9;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[10;1H║\e(B\e[m\e]8;;\e\\   \e[10;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[11;1H║\e(B\e[m\e[38;5;22m\e]8;;\e\\(s)\e[11;6H\e(B\e[m\e[90m\e]8;;\e\\find swapped words\e[11;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[12;1H║\e[12;50H║\e[13;1H║\e(B\e[m\e[38;5;22m\e]8;;\e\\(w)\e[13;6H\e(B\e[m\e[90m\e]8;;\e\\find wrong words\e[13;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[14;1H║\e[14;50H║\e[15;1H║\e(B\e[m\e[38;5;22m\e]8;;\e\\(d)\e[15;6H\e(B\e[m\e[90m\e]8;;\e\\display seed\e[15;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[16;1H║\e[16;50H║\e[17;1H║\e(B\e[m\e[38;5;22m\e]8;;\e\\(q)\e[17;6H\e(B\e[m\e[38;5;18m\e[1m\e]8;;\e\\quit\e[17;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[18;1H║\e[18;50H║\e[19;1H║\e[19;50H║\e[20;1H║\e[20;50H║\e[21;1H║\e[21;50H║\e[22;1H║\e[22;50H║\e[23;1H╚════════════════════════════════════════════════╝\e[24;1H\e(B\e[m\e[38;5;18m\e]8;;\e\\INFO: create a random mnemonic.\e[?25l\e[?25l\e[?25l"
+  - delay: 1220
+    content: "\e[?25l\e[5;56H\e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\about\e[5;70Hsuch\e[6;56Hbalcony\e[6;70Hexpect\e[7;56Hanxiety\e[7;70Hbless\e[8;56Hhip\e[8;70Hturn\e[9;56Hcorrect\e[9;70Hsteel\e[10;56Hbread\e[10;70Hdilemma\e[11;56Halmost\e[11;70Heasily\e[12;56Hstomach\e[12;70Hjoin\e[13;56Hinitial\e[13;70Hguess\e[14;56Hattack\e[14;70Hsuper\e[15;56Hraw\e[15;70Hscissors\e[16;56Hlaw\e[16;70Hflame\e[18;52H\e(B\e[m\e[38;5;114m\e[1m\e]8;;\e\\ ✓ valid mnemonic\e(B\e[m\e]8;;\e\\     \e[?25l"
+  - delay: 379
+    content: "\e[?25l\e[2;1H\e(B\e[m\e[90m\e]8;;\e\\┌────────────────────────────────────────────────┐╔════════════════════════════╗\e[3;1H│\e[3;6H\e(B\e[m\e[38;5;18m\e[1m\e]8;;\e\\random mnemonic\e[3;50H\e(B\e[m\e[90m\e]8;;\e\\│║\e[3;80H║\e[4;1H│\e[4;50H│║\e[4;80H║\e[5;1H│\e[5;6H\e(B\e[m\e[38;5;18;48;5;114m\e[1m\e]8;;\e\\edit mnemonic\e[5;50H\e(B\e[m\e[90m\e]8;;\e\\│║\e[5;80H║\e[6;1H│\e[6;50H│║\e[6;80H║\e[7;1H│\e[7;50H│║\e[7;80H║\e[8;1H│\e[8;50H│║\e[8;80H║\e[9;1H│\e[9;50H│║\e[9;80H║\e[10;1H│\e[10;50H│║\e[10;80H║\e[11;1H│\e[11;50H│║\e[11;80H║\e[12;1H│\e[12;50H│║\e[12;80H║\e[13;1H│\e[13;50H│║\e[13;80H║\e[14;1H│\e[14;50H│║\e[14;80H║\e[15;1H│\e[15;6H\e(B\e[m\e[38;5;18m\e[1m\e]8;;\e\\display seed\e[15;50H\e(B\e[m\e[90m\e]8;;\e\\│║\e[15;80H║\e[16;1H│\e[16;50H│║\e[16;80H║\e[17;1H│\e[17;50H│║\e[17;80H║\e[18;1H│\e[18;50H│║\e[18;80H║\e[19;1H│\e[19;50H│║\e[19;80H║\e[20;1H│\e[20;50H│║\e[20;80H║\e[21;1H│\e[21;50H│║\e[21;80H║\e[22;1H│\e[22;50H│║\e[22;80H║\e[23;1H└────────────────────────────────────────────────┘╚════════════════════════════╝\e[24;7H\e(B\e[m\e[38;5;18m\e]8;;\e\\edit or paste \e[24;22Hnemonic words.\e[3;63H\e[?12l\e[?25h\e[0 q\e[?25l\e[24;7H\e(B\e[m\e[38;5;18m\e]8;;\e\\The empty password and\e[24;30H'aezeed' (default) are synonymous.\e[3;63H\e[?12l\e[?25h\e[0 q"
+  - delay: 1210
+    content: "\e[?25l\e[5;61H\e[?12l\e[?25h\e[0 q\e[?25l\e[24;7H\e(B\e[m\e[38;5;18m\e]8;;\e\\Select mnemonic words or paste from clipbo\e[24;51Hd\e[24;53H(or ESC to menu).\e[5;61H\e[?12l\e[?25h\e[0 q"
+  - delay: 259
+    content: "\e[?25l\e[5;56H\e[?12l\e[?25h\e[0 q"
+  - delay: 206
+    content: "\e[?25l\e[5;56H\e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\     \e[5;56H\e[?12l\e[?25h\e[0 q"
+  - delay: 512
+    content: "\e[?25l\e[18;52H\e(B\e[m\e[91m\e[1m\e]8;;\e\\ ✗ incomplete mnemonic\e[6;63H\e[?12l\e[?25h\e[0 q\e[?25l\e[9;6H\e(B\e[m\e[38;5;18m\e[1m\e]8;;\e\\find missing words\e[15;6H\e(B\e[m\e[90m\e]8;;\e\\display seed\e[6;63H\e[?12l\e[?25h\e[0 q"
+  - delay: 153
+    content: "\e[?25l\e[7;63H\e[?12l\e[?25h\e[0 q\e[?25l\e[7;63H\e[?12l\e[?25h\e[0 q"
+  - delay: 152
+    content: "\e[?25l\e[7;56H\e[?12l\e[?25h\e[0 q"
+  - delay: 277
+    content: "\e[?25l\e[7;56H\e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\       \e[7;56H\e[?12l\e[?25h\e[0 q"
+  - delay: 957
+    content: "\e[?25l\e[2;1H\e(B\e[m\e[90m\e]8;;\e\\╔════════════════════════════════════════════════╗┌────────────────────────────┐\e[3;1H║\e[3;50H║│\e[3;80H│\e[4;1H║\e[4;50H║│\e[4;80H│\e[5;1H║\e[5;50H║│\e[5;80H│\e[6;1H║\e[6;50H║│\e[6;80H│\e[7;1H║\e[7;50H║│\e[7;80H│\e[8;1H║\e[8;50H║│\e[8;80H│\e[9;1H║\e[9;50H║│\e[9;80H│\e[10;1H║\e[10;50H║│\e[10;80H│\e[11;1H║\e[11;50H║│\e[11;80H│\e[12;1H║\e[12;50H║│\e[12;80H│\e[13;1H║\e[13;50H║│\e[13;80H│\e[14;1H║\e[14;50H║│\e[14;80H│\e[15;1H║\e[15;50H║│\e[15;80H│\e[16;1H║\e[16;50H║│\e[16;80H│\e[17;1H║\e[17;50H║│\e[17;80H│\e[18;1H║\e[18;50H║│\e[18;80H│\e[19;1H║\e[19;50H║│\e[19;80H│\e[20;1H║\e[20;50H║│\e[20;80H│\e[21;1H║\e[21;50H║│\e[21;80H│\e[22;1H║\e[22;50H║│\e[22;80H│\e[23;1H╚════════════════════════════════════════════════╝└────────────────────────────┘\e[24;7H\e(B\e[m\e[38;5;18m\e]8;;\e\\edit or paste mnemonic word\e[24;35H.\e(B\e[m\e]8;;\e\\                                  \e[?25l"
+  - delay: 1168
+    content: "\e[?25l\e[5;6H\e(B\e[m\e[38;5;18m\e[1m\e]8;;\e\\edit mnemonic\e[7;6H\e(B\e[m\e[38;5;18;48;5;114m\e[1m\e]8;;\e\\clear mnemonic\e[24;7H\e(B\e[m\e[38;5;18m\e]8;;\e\\clear mnemonic words.\e(B\e[m\e]8;;\e\\        \e[?25l"
+  - delay: 175
+    content: "\e[?25l\e[7;6H\e(B\e[m\e[38;5;18m\e[1m\e]8;;\e\\clear mnemonic\e[9;6H\e(B\e[m\e[38;5;18;48;5;114m\e[1m\e]8;;\e\\find missing words\e[24;7H\e(B\e[m\e[38;5;18m\e]8;;\e\\brute\e[24;13Hforce missing words.\e[?25l"
+  - delay: 491
+    content: "\e[?25l\e[2;1H\e(B\e[m\e[90m\e]8;;\e\\┌────────────────────────────────────────────────┐\e[3;1H│\e[3;50H│\e[4;1H│\e[4;50H│\e[5;1H│\e[5;50H│\e[6;1H│\e[6;50H│\e[7;1H│\e[7;50H│\e[8;1H│\e[8;50H│\e[9;1H│\e[9;50H│\e[10;1H│\e[10;50H│\e[11;1H│\e[11;50H│\e[12;1H│\e[12;50H│\e[13;1H│\e[13;50H│\e[14;1H│\e[14;50H│\e[15;1H│\e[15;50H│\e[16;1H│\e[16;50H│\e[17;1H│\e[17;50H│\e[18;1H│\e[18;50H│\e[19;1H│\e[19;50H│\e[20;1H│\e[20;50H│\e[21;1H│\e[21;50H│\e[22;1H│\e[22;50H│\e[23;1H└────────────────────────────────────────────────┘\e[?25l"
+  - delay: 99
+    content: "\e[?25l\e[24;7H\e(B\e[m\e[38;5;18m\e]8;;\e\\t\e[24;9Hied\e[24;13H4270/2315255808 (0.00%) elapsed: 0s remaining: ~15h3m0s (max)\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\8994\e[24;62H4\e[24;64H18m0s (max)\e[?25l"
+  - delay: 99
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\13767/23152\e[24;25H5808 (0.\e[24;34H0%) elapsed: 0s remaining: ~14h1\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\8609\e[24;63H3\e[24;65H49m0s (max)\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\23241\e[24;65H50\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\792\e[24;47H1\e[24;65H49\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\32715\e[24;66H6\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\7532\e[24;66H2\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\4228\e[24;66H1\e[?25l"
+  - delay: 101
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\7103\e[24;65H39\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\5167\e[24;65H41\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\6236\e[24;66H3\e[?25l"
+  - delay: 99
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\61040\e[24;66H2\e[?25l"
+  - delay: 101
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\5799\e[24;66H1\e[?25l"
+  - delay: 99
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\70474\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\5287\e[24;47H2\e[24;66H0\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\80114\e[24;65H39\e[?25l"
+  - delay: 101
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\4930\e[24;66H8\e[?25l"
+  - delay: 99
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\9709\e[24;66H7\e[?25l"
+  - delay: 101
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\945\e[24;17H0\e[?25l"
+  - delay: 99
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\9364\e[24;66H5\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;13H\e(B\e[m\e[38;5;18m\e]8;;\e\\104216/23152\e[24;26H5808 (0.\e[24;35H0%) elapsed: 2s remaining: ~13h35m0s (max)\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;15H\e(B\e[m\e[38;5;18m\e]8;;\e\\9042\e[24;67H4\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\13871\e[24;67H3\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;15H\e(B\e[m\e[38;5;18m\e]8;;\e\\8690\e[24;35H1\e[?25l"
+  - delay: 101
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\23424\e[24;48H3\e[?25l"
+  - delay: 99
+    content: "\e[?25l\e[24;15H\e(B\e[m\e[38;5;18m\e]8;;\e\\811\e[?25l"
+  - delay: 101
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\32833\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[24;15H\e(B\e[m\e[38;5;18m\e]8;;\e\\7645\e[?25l"
+  - delay: 99
+    content: "\e[?25l\e[24;14H\e(B\e[m\e[38;5;18m\e]8;;\e\\42488\e[24;67H2\e[?25l"
+  - delay: 101
+    content: "\e[?25l\e[24;15H\e(B\e[m\e[38;5;18m\e]8;;\e\\3\e[24;17H71\e[24;66H54\e[?25l"
+  - delay: 100
+    content: "\e[?25l\e[5;6H\e(B\e[m\e[38;5;18;48;5;114m\e[1m\e]8;;\e\\edit mnemonic\e[5;56H\e(B\e[m\e[32;48;5;195m\e[1m\e]8;;\e\\about\e[7;56Hanxiety\e[9;6H\e(B\e[m\e[38;5;18m\e[1m\e]8;;\e\\find missing words\e[24;18H\e(B\e[m\e[38;5;18m\e]8;;\e\\2\e[24;64H4\e[24;66H21\e[?25l"
+  - delay: 26
+    content: "\e[?25l\e[3;2H\e(B\e[m\e[97;40m\e[1m\e]8;;\e\\ ▄▄▄▄▄▄▄ ▄▄▄▄ ▄▄▄ ▄ ▄ ▄ ▄  ▄▄▄▄▄▄▄ \e[3;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\Success! \e[4;2H\e(B\e[m\e[97;40m\e[1m\e]8;;\e\\ █ ▄▄▄ █ ▄▄██▀ ▀▄▀ █▄▄▀ ▀▀ █ ▄▄▄ █ \e[5;2H █ ███ █ ▀▄▀ ▀██▄ ▀█▄█ ██  █ ███ █ \e[5;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\Please consi\e[5;56H\e(B\e[m\e[30;48;5;37m\e[1m\e]8;;\e\\about    \e[6;2H\e(B\e[m\e[97;40m\e[1m\e]8;;\e\\ █▄▄▄▄▄█ █ █▀█ █ █ █▀▄▀▄ ▄ █▄▄▄▄▄█ \e[6;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\der a donati\e[7;2H\e(B\e[m\e[97;40m\e[1m\e]8;;\e\\  ▄ ▄ ▄▄▄█▀ █ ▄█▄ ▀█  █▄▀█▄▄▄ ▄▄ ▄ \e[7;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\on to keep t\e[7;56H\e(B\e[m\e[30;48;5;37m\e[1m\e]8;;\e\\anxiety  \e[8;2H\e(B\e[m\e[97;40m\e[1m\e]8;;\e\\ ▀▀▄▄▄ ▄█  ▀█▀▄  ▄▀█▄█▀█ ▀▄█▀▄█  █ \e[8;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\his tool awe\e[9;2H\e(B\e[m\e[97;40m\e[1m\e]8;;\e\\  ▄  ▀▄▄▄ ▀▀▄▀▀▄█▄ █ ██ ▀▄▀▄▄ ▄    \e[9;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\some.\e[10;2H\e(B\e[m\e[97;40m\e[1m\e]8;;\e\\   ▀▄▄▀▄▄▄▄█▄▄▄▄ ▄▀█▄▀██▄█▀▀▄█▄▄▄▀ \e[11;2H ▄█ ▄▀█▄▀██ █ ▄▀█▄█▄ ▀█  ██▄▄▄  ██ \e[12;2H  █▄█▄▀▄▀▀▄ █▀▄▄▄▄▀▀ ██▀▀█▄▄▄ ▄▄█▄ \e[13;2H █▄██▀█▄▄▀▀█▄ ▄▄▀▀   ▀█   █▀▀   ▄▀ \e[14;2H ▄██▄▀ ▄▄██ ▀▀ ▄ ▄▀██▄   ▄▀█▄  ▄▀█ \e[15;2H ▄▀█ ▄▄▄▀█▄█  █▄ ▀██▀▀█▄ ▄█▄▄▄▀ ▀  \e[16;2H ▄▄▄▄▄▄▄ █▄█▀█▄███▄█▀ ▀ ▀█ ▄ █▀▄▀▀ \e[17;2H █ ▄▄▄ █ ▀▄ ▀▀██ ▄▀▄▄▀██ █▄▄▄█  ▀█ \e[18;2H █ ███ █ ▀█ ██ ██▄██ ▄▀█ ▄▄▀██▀ ▀▄ \e[18;52H\e(B\e[m\e[38;5;114m\e[1m\e]8;;\e\\ ✓ valid mnemonic\e(B\e[m\e]8;;\e\\     \e[19;2H\e(B\e[m\e[97;40m\e[1m\e]8;;\e\\ █▄▄▄▄▄█ ▀█▄██▄▄▀███▀ █▀▄█▀▄█▄▄ ▄  \e[20;2H                                   \e[20;39H\e(B\e[m\e[48;5;195m\e]8;;\e\\  \e(B\e[m\e[38;5;18;48;5;195m\e]8;;\e\\Return\e(B\e[m\e[48;5;195m\e]8;;\e\\  \e[22;2H\e(B\e[m\e[38;5;18m\e]8;;\e\\bc1qfkv06pjcgq280f42nu66ktdfeer7f06\e[22;39H\e(B\e[m\e[48;5;195m\e]8;;\e\\   \e(B\e[m\e[38;5;18;48;5;195m\e]8;;\e\\Quit\e(B\e[m\e[48;5;195m\e]8;;\e\\   \e[?25l\e[?25l\e[2;1H\e(B\e[m\e[90m\e]8;;\e\\╔════════════════════════════════════════════════╗\e[3;1H║\e[3;50H║\e[4;1H║\e[4;50H║\e[5;1H║\e[5;44H\e(B\e[m\e]8;;\e\\      \e(B\e[m\e[90m\e]8;;\e\\║\e[6;1H║\e[6;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\consider \e[6;48H\e(B\e[m\e]8;;\e\\  \e(B\e[m\e[90m\e]8;;\e\\║\e[7;1H║\e[7;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\donation to\e(B\e[m\e]8;;\e\\ \e(B\e[m\e[90m\e]8;;\e\\║\e[8;1H║\e[8;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\keep this\e(B\e[m\e]8;;\e\\   \e(B\e[m\e[90m\e]8;;\e\\║\e[9;1H║\e[9;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\t\e[9;40Hol\e(B\e[m\e]8;;\e\\ \e[9;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[10;1H║\e[10;38H\e(B\e[m\e[38;5;18m\e]8;;\e\\awesome.\e[10;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[11;1H║\e[11;50H║\e[12;1H║\e[12;50H║\e[13;1H║\e[13;50H║\e[14;1H║\e[14;50H║\e[15;1H║\e[15;50H║\e[16;1H║\e[16;50H║\e[17;1H║\e[17;50H║\e[18;1H║\e[18;50H║\e[19;1H║\e[19;50H║\e[20;1H║\e[20;39H\e(B\e[m\e[48;5;18m\e]8;;\e\\  Return  \e[20;50H\e(B\e[m\e[90m\e]8;;\e\\║\e[21;1H║\e[21;50H║\e[22;1H║\e[22;50H║\e[23;1H╚════════════════════════════════════════════════╝\e[?25l"
+  - delay: 1631
+    content: "\e[?25l\e[20;39H\e(B\e[m\e[48;5;195m\e]8;;\e\\  \e(B\e[m\e[38;5;18;48;5;195m\e]8;;\e\\Return\e(B\e[m\e[48;5;195m\e]8;;\e\\  \e[22;39H\e(B\e[m\e[48;5;18m\e]8;;\e\\   Quit   \e[?25l"
